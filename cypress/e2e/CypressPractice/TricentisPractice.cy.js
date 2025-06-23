@@ -8,6 +8,7 @@ describe('Practicando Cypress con la pagina de Tricentis Demo Web Shop', () => {
         cy.title().should('include', 'Demo Web Shop')
     })
 
+    //Se colocan los pasos en forma de logs
     it('Validacion de campos en un formulario de registro Demo Web Shop', () => {
         cy.log("Paso 1 En la pantalla principal dar clic en Register")
         cy.get('.ico-register').should('be.visible').and('have.text', 'Register').click()
